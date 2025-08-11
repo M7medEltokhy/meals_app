@@ -31,10 +31,15 @@ class MyApp extends StatelessWidget {
           localizationsDelegates: context.localizationDelegates,
           supportedLocales: context.supportedLocales,
           locale: context.locale,
-          debugShowCheckedModeBanner: false,
-          home: SplashScreen(),
+          // home: SplashScreen(),
+          initialRoute: "/",
+          routes: {
+            "/": (_) => SplashScreen(),
+            "/onboarding": (_) => OnboardingScreen(),
+          },
         );
       },
     );
   }
 }
+
