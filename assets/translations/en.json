@@ -25,5 +25,7 @@
     "description": "Description",
     "time": "Time",
     "save": "Save",
-    "calories": "Calories"
+    "calories": "Calories",
+    "no_meals": "No Meals",
+    "add_now": "Add Now"
 }

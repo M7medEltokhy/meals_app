@@ -149,13 +149,13 @@ class _HomeScreenState extends State<HomeScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'No Meals',
+                                  'no_meals'.tr(),
                                   style: TextStyle(
                                     fontSize: 25,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-                                Text('Add Now', style: TextStyle(fontSize: 20)),
+                                Text('add_now'.tr(), style: TextStyle(fontSize: 20)),
                               ],
                             ),
                           ),
