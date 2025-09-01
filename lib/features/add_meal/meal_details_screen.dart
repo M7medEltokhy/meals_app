@@ -77,30 +77,40 @@ class MealDetailsScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 10.h),
-                  Row(
-                    children: [
-                      SvgPicture.asset('assets/svgs/time.svg'),
-                      SizedBox(width: 5.w),
-                      Text(
-                        mealModel.time,
-                        style: TextStyle(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w400,
-                          color: Color(0xff878787),
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 10.w,
+                      vertical: 8.h,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppColor.primaryColor.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(16.r),
+                    ),
+                    child: Row(
+                      children: [
+                        SvgPicture.asset('assets/svgs/time.svg'),
+                        SizedBox(width: 5.w),
+                        Text(
+                          mealModel.time,
+                          style: TextStyle(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff878787),
+                          ),
                         ),
-                      ),
-                      Spacer(),
-                      SvgPicture.asset('assets/svgs/rate.svg'),
-                      SizedBox(width: 5.w),
-                      Text(
-                        mealModel.rate.toString(),
-                        style: TextStyle(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w400,
-                          color: Color(0xff878787),
+                        Spacer(),
+                        SvgPicture.asset('assets/svgs/rate.svg'),
+                        SizedBox(width: 5.w),
+                        Text(
+                          mealModel.rate.toString(),
+                          style: TextStyle(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff878787),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   SizedBox(height: 10.h),
                   Padding(
