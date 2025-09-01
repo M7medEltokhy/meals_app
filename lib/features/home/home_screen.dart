@@ -155,7 +155,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-                                Text('add_now'.tr(), style: TextStyle(fontSize: 20)),
+                                Text(
+                                  'add_now'.tr(),
+                                  style: TextStyle(fontSize: 20),
+                                ),
                               ],
                             ),
                           ),
